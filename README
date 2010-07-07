@@ -1,0 +1,7 @@
+Contains a data type renderer that has three options: True, False and Null. 
+
+If the value is null then the umbraco:macro control syntax of someParam="$someField" will recurse up the node's ancestors to find the first non-null result. 
+
+This allows you to have things like "Do this", "Do that" or "Inherit from the parent". 
+
+To use, just create a new Data Type that uses the "Optional Boolean" data type renderer and then specify the labels for the null, false and true options.
